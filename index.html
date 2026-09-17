@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RocketTV — Premium IPTV za Balkan</title>
+  <meta name="description" content="RocketTV: 28.000+ kanala, 120.000 filmova i serija, 4K sport. Aktivacija za 5 minuta. Paketi od 10€.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="RocketTV — početna">
+        <img src="images/logo.svg" alt="RocketTV logo" width="36" height="36">
+        Rocket<span class="accent">TV</span>
+      </a>
+      <nav class="nav-links" aria-label="Glavna navigacija">
+        <a href="index.html" data-nav="index">Početna</a>
+        <a href="kanali.html" data-nav="kanali">Kanali</a>
+        <a href="paketi.html" data-nav="paketi">Paketi</a>
+        <a href="podrska.html" data-nav="podrska">Podrška</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="btn btn-ghost btn-sm" data-order data-trial>24h trial</button>
+        <button type="button" class="btn btn-flame btn-sm" data-order data-plan="3m">Poruči paket</button>
+      </div>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Otvori meni" aria-expanded="false">
+        <svg class="icon i-menu"><use href="#i-menu"></use></svg>
+        <svg class="icon i-close" hidden><use href="#i-x"></use></svg>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" data-nav="index">Početna</a>
+    <a href="kanali.html" data-nav="kanali">Kanali</a>
+    <a href="paketi.html" data-nav="paketi">Paketi</a>
+    <a href="podrska.html" data-nav="podrska">Podrška</a>
+    <div class="mobile-actions">
+      <button type="button" class="btn btn-flame" data-order data-plan="3m">Poruči paket</button>
+      <button type="button" class="btn btn-ghost" data-order data-trial>Zatraži 24h trial</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="https://images-assets.nasa.gov/image/sts129-s-069/sts129-s-069~large.jpg" alt="Lansiranje space shuttle-a Atlantis (STS-129) u krupnom planu">
+      </div>
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-badge"><i></i>Sezona 2026/27 · svi sportovi uključeni</span>
+          <h1>Dolazi vam TV, <span class="flame-text">brzinom rakete.</span></h1>
+          <p class="hero-lead">28.000+ kanala, 120.000 filmova i serija, 4K sport bez seckanja. Aktivacija za 5 minuta — na TV-u, telefonu, Fire Sticku, tabletu.</p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary" data-order data-plan="3m">Poruči paket od 10€</button>
+            <button type="button" class="btn btn-ghost" data-order data-trial>Zatraži 24h trial</button>
+          </div>
+          <ul class="hero-pills">
+            <li><svg class="icon"><use href="#i-check"></use></svg>Bez ugovora</li>
+            <li><svg class="icon"><use href="#i-check"></use></svg>Anti-freeze serveri</li>
+            <li><svg class="icon"><use href="#i-check"></use></svg>Podrška 24/7</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="glow-blob"></div>
+          <div class="orbit-wrap">
+            <div class="orbit orbit-1"><i class="orbit-dot"></i></div>
+            <div class="orbit orbit-2"><i class="orbit-dot orbit-dot-2"></i></div>
+          </div>
+          <div class="tv-card-wrap">
+            <div class="tv-card">
+              <div class="tv-top">
+                <span class="live"><i></i>Uživo</span>
+                <span class="q-badge">4K · HDR</span>
+              </div>
+              <div class="tv-thumb">
+                <img src="https://images.pexels.com/photos/28827841/pexels-photo-28827841.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+                <div class="tv-thumb-bar"><span>Liga šampiona · Finale</span><span>20:45</span></div>
+              </div>
+              <div class="tv-meta">
+                <b>Arena Sport 1 Premium</b>
+                <span>EPG · Catch-up 7 dana · Anti-freeze</span>
+              </div>
+              <div class="tv-progress"><i></i></div>
+            </div>
+          </div>
+          <div class="float-chip chip-1"><i class="dot-green"></i>99.9% uptime</div>
+          <div class="float-chip chip-2"><svg class="icon"><use href="#i-tv"></use></svg>28.000+ kanala</div>
+          <div class="float-rocket"><svg class="icon"><use href="#i-rocket"></use></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats" aria-label="Brojke">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <p class="stat-value" data-count data-target="28000" data-suffix="+">0+</p>
+            <p class="stat-label">Live kanala</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value" data-count data-target="120000" data-suffix="+">0+</p>
+            <p class="stat-label">Filmova i serija</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value" data-count data-target="99.9" data-decimals="1" data-suffix="%">0.0%</p>
+            <p class="stat-label">Uptime</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value" data-count data-target="4" data-suffix="K">0K</p>
+            <p class="stat-label">Ultra HD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Arena Sport</span><span class="marquee-item">Sport Klub</span><span class="marquee-item">HBO</span><span class="marquee-item">RTS</span><span class="marquee-item">Nova S</span><span class="marquee-item">Prva</span><span class="marquee-item">Pink</span><span class="marquee-item">N1</span><span class="marquee-item">Eurosport</span><span class="marquee-item">Sky Sports</span><span class="marquee-item">beIN Sports</span><span class="marquee-item">DAZN</span><span class="marquee-item">ESPN</span><span class="marquee-item">Discovery</span><span class="marquee-item">National Geographic</span><span class="marquee-item">Cartoon Network</span><span class="marquee-item">Nickelodeon</span><span class="marquee-item">CNN</span><span class="marquee-item">BBC</span><span class="marquee-item">Max Sport</span>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track rev">
+        <span class="marquee-item">Liga šampiona</span><span class="marquee-item">Premier liga</span><span class="marquee-item">La Liga</span><span class="marquee-item">Serie A</span><span class="marquee-item">Bundesliga</span><span class="marquee-item">NBA</span><span class="marquee-item">Evroliga</span><span class="marquee-item">Formula 1</span><span class="marquee-item">UFC</span><span class="marquee-item">Wimbledon</span><span class="marquee-item">Roland Garros</span><span class="marquee-item">NFL</span><span class="marquee-item">MotoGP</span><span class="marquee-item">Boks PPV</span><span class="marquee-item">Superliga Srbije</span><span class="marquee-item">ABA liga</span>
+      </div>
+    </div>
+
+    <!-- ===== ZAŠTO ROCKETTV ===== -->
+    <section class="section features" id="zasto">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Zašto RocketTV</p>
+          <h2 class="section-title">Napravljen za sport, film i brzinu.</h2>
+          <p class="section-sub">Nismo kablovska sa novim logom. Gradili smo servis oko sporta, filma i brzine — pa tek onda oko cene.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-tv"></use></svg></div>
+            <h3>4K Ultra HD</h3>
+            <p>Gledaj utakmice, premijere i serije u kristalnom 4K i FHD kvalitetu, bez kompromisa.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-zap"></use></svg></div>
+            <h3>Anti-freeze mreža</h3>
+            <p>Višestruki serveri i load-balancing. Buffering ostaje u prošlosti — čak i u derbiju.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-clock"></use></svg></div>
+            <h3>EPG i catch-up</h3>
+            <p>Pun TV vodič i vraćanje emisija do 7 dana unazad. Ništa ti neće promenuti.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-trophy"></use></svg></div>
+            <h3>Svi sportovi + PPV</h3>
+            <p>Liga šampiona, Premier liga, NBA, F1, UFC, Arena Sport, Sport Klub — bez dodatnih pretplata.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-film"></use></svg></div>
+            <h3>VOD biblioteka</h3>
+            <p>Najnoviji filmovi, kompletne sezone serija i dečiji sadržaj — dostupni odmah, on-demand.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-layers"></use></svg></div>
+            <h3>Svi uređaji</h3>
+            <p>Smart TV, Fire Stick, Android, iPhone, MAG, Windows, laptop. Jedan nalog, tvoj ritam.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-gauge"></use></svg></div>
+            <h3>Brza aktivacija</h3>
+            <p>Platiš — i za pet minuta stižu podaci. Nema tehničara, nema kablova, nema čekanja.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature-icon"><svg class="icon"><use href="#i-headphones"></use></svg></div>
+            <h3>Podrška 24/7</h3>
+            <p>Pravi ljudi na WhatsApp-u i Telegramu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SADRŽAJ / KATEGORIJE ===== -->
+    <section class="section cats" id="sadrzaj">
+      <div class="container">
+        <div class="section-head split reveal">
+          <div>
+            <p class="eyebrow">Sadržaj</p>
+            <h2 class="section-title">Šta god da tražiš — tu je.</h2>
+            <p class="section-sub">Od derbija do crtaća. Klikni na kategoriju i pogledaj isečak liste kanala.</p>
+          </div>
+          <a href="kanali.html" class="link-arrow">Kompletan isečak liste <svg class="icon"><use href="#i-arrow"></use></svg></a>
+        </div>
+        <div class="cats-grid">
+          <a href="kanali.html?cat=Sport" class="cat wide reveal">
+            <img src="https://images.pexels.com/photos/35898730/pexels-photo-35898730.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sport">
+            <div class="cat-overlay"></div>
+            <span class="cat-arrow"><svg class="icon"><use href="#i-arrow"></use></svg></span>
+            <div class="cat-body">
+              <p class="cat-count">1.200+ kanala</p>
+              <p class="cat-title">Sport</p>
+              <p class="cat-desc">Arena, SK, ESPN, Sky, BeIN, DAZN i svi PPV prenosi.</p>
+            </div>
+          </a>
+          <a href="kanali.html?cat=Filmovi" class="cat reveal">
+            <img src="https://images.pexels.com/photos/8263369/pexels-photo-8263369.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Filmovi">
+            <div class="cat-overlay"></div>
+            <span class="cat-arrow"><svg class="icon"><use href="#i-arrow"></use></svg></span>
+            <div class="cat-body">
+              <p class="cat-count">45.000+ naslova</p>
+              <p class="cat-title">Filmovi</p>
+              <p class="cat-desc">Holivud, Evropa, premijere i klasici u 4K.</p>
+            </div>
+          </a>
+          <a href="kanali.html?cat=Serije" class="cat reveal">
+            <img src="https://images.pexels.com/photos/4009409/pexels-photo-4009409.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Serije">
+            <div class="cat-overlay"></div>
+            <span class="cat-arrow"><svg class="icon"><use href="#i-arrow"></use></svg></span>
+            <div class="cat-body">
+              <p class="cat-count">35.000+ epizoda</p>
+              <p class="cat-title">Serije</p>
+              <p class="cat-desc">Kompletne sezone, odmah, bez čekanja nove nedelje.</p>
+            </div>
+          </a>
+          <a href="kanali.html?cat=Deca" class="cat reveal">
+            <img src="https://images.pexels.com/photos/4089661/pexels-photo-4089661.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Deca">
+            <div class="cat-overlay"></div>
+            <span class="cat-arrow"><svg class="icon"><use href="#i-arrow"></use></svg></span>
+            <div class="cat-body">
+              <p class="cat-count">400+ kanala</p>
+              <p class="cat-title">Deca</p>
+              <p class="cat-desc">Disney, Nick, Cartoon Network i edukativni program.</p>
+            </div>
+          </a>
+          <a href="kanali.html?cat=Vesti" class="cat reveal">
+            <img src="https://images.pexels.com/photos/33925166/pexels-photo-33925166.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vesti">
+            <div class="cat-overlay"></div>
+            <span class="cat-arrow"><svg class="icon"><use href="#i-arrow"></use></svg></span>
+            <div class="cat-body">
+              <p class="cat-count">300+ kanala</p>
+              <p class="cat-title">Vesti</p>
+              <p class="cat-desc">N1, CNN, BBC, Al Jazeera, Bloomberg, regionalne mreže.</p>
+            </div>
+          </a>
+          <a href="kanali.html?cat=Dokumentarci" class="cat reveal">
+            <img src="https://images.pexels.com/photos/39332308/pexels-photo-39332308.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Dokumentarci">
+            <div class="cat-overlay"></div>
+            <span class="cat-arrow"><svg class="icon"><use href="#i-arrow"></use></svg></span>
+            <div class="cat-body">
+              <p class="cat-count">250+ kanala</p>
+              <p class="cat-title">Dokumentarci</p>
+              <p class="cat-desc">NatGeo, Discovery, History, Animal Planet.</p>
+            </div>
+          </a>
+          <a href="kanali.html" class="cat cat-cta reveal">
+            <div>
+              <svg class="icon"><use href="#i-play"></use></svg>
+              <p class="cat-title">28.000+ kanala</p>
+              <p class="cat-desc">Pogledaj isečak liste i pretraži po kategoriji.</p>
+              <span class="btn btn-flame btn-sm">Lista kanala</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== UREĐAJI ===== -->
+    <section class="section devices" id="uredjaji">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Uređaji</p>
+          <h2 class="section-title">Radi na svemu što ima ekran.</h2>
+          <p class="section-sub">Šaljemo kratko uputstvo za tvoj model. Nema tehničara, nema kablova — samo aplikacija i podaci.</p>
+        </div>
+        <div class="devices-grid">
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-tv"></use></svg></span><div><b>Smart TV</b><span>Samsung, LG, Sony, TCL</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-cast"></use></svg></span><div><b>Fire Stick</b><span>4K i Max</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-phone"></use></svg></span><div><b>Android</b><span>Telefon i box</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-tablet"></use></svg></span><div><b>iPhone / iPad</b><span>iOS 14+</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-box"></use></svg></span><div><b>MAG / Formuler</b><span>Linux STB</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-laptop"></use></svg></span><div><b>Windows</b><span>PC i laptop</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-monitor"></use></svg></span><div><b>macOS</b><span>Safari / app</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-dish"></use></svg></span><div><b>Enigma2</b><span>Vu+, Dreambox</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-tv"></use></svg></span><div><b>Android TV</b><span>Google TV</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-gamepad"></use></svg></span><div><b>Xbox</b><span>Browser app</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-globe"></use></svg></span><div><b>Web player</b><span>Bilo koji browser</span></div></div>
+          <div class="device reveal"><span class="device-icon"><svg class="icon"><use href="#i-phone"></use></svg></span><div><b>Smartfon</b><span>Gledaj u pokretu</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAKETI ===== -->
+    <section class="section pricing" id="paketi">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Paketi</p>
+          <h2 class="section-title">Izaberi paket po tvojoj meri:</h2>
+          <p class="section-sub">Plaćaš period unapred. Ne vezujemo te ugovorom i ne skidamo ti sredstva.</p>
+        </div>
+        <div data-pricing></div>
+      </div>
+    </section>
+
+    <!-- ===== KAKO FUNKCIONIŠE ===== -->
+    <section class="section how" id="kako">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kako funkcioniše</p>
+          <h2 class="section-title">U tri koraka do prve utakmice.</h2>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-ghost">01</span>
+            <p class="step-num">01</p>
+            <h3>Izaberi paket</h3>
+            <p>Jedan mesec za probu ili godinu za najbolju cenu. Bez ugovora i skrivenih stavki.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-ghost">02</span>
+            <p class="step-num">02</p>
+            <h3>Plati kako ti odgovara</h3>
+            <p>Kartica, PayPal, kripto ili uplatnica. Potvrda stiže odmah na WhatsApp.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-ghost">03</span>
+            <p class="step-num">03</p>
+            <h3>Gledaj za 5 minuta</h3>
+            <p>Šaljemo ti podatke i kratko uputstvo za tvoj uređaj. Uključiš i gledaš.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GLAS PUBLIKE ===== -->
+    <section class="section testi" id="utisci">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Glas publike</p>
+          <h2 class="section-title">Šta kažu oni koji su se skinuli sa kabla ?</h2>
+        </div>
+        <div class="testi-grid">
+          <article class="testi reveal">
+            <div class="stars" aria-label="5 od 5 zvezdica">
+              <svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg>
+            </div>
+            <blockquote>“Prešao sam sa kablovske posle derbija koji se seckao. RocketTV vuče 4K bez problema, a Arena i SK su tu. Porodica gleda na TV-u, ja na telefonu.”</blockquote>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/14950779/pexels-photo-14950779.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt="Eric">
+              <div><b>Erick Minotti</b><span>Cirih</span></div>
+            </div>
+          </article>
+          <article class="testi reveal">
+            <div class="stars" aria-label="5 od 5 zvezdica">
+              <svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg>
+            </div>
+            <blockquote>“Rekla bih da je setup trajao brze od pravljenja kafe. Dečiji kanali su sparemni za vikend, a serije stignu istog dana kad izađu.”</blockquote>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/6497112/pexels-photo-6497112.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt="Marija Stojanović">
+              <div><b>Marija Stojanović</b><span>Novi Sad</span></div>
+            </div>
+          </article>
+          <article class="testi reveal">
+            <div class="stars" aria-label="5 od 5 zvezdica">
+              <svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg><svg class="icon icon-fill"><use href="#i-star"></use></svg>
+            </div>
+            <blockquote>“Uzeo godišnji paket — isplati se već posle trećeg meseca. Podrška stvarno odgovara, što kod prethodnog provajdera nije bio slučaj.”</blockquote>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/6102841/pexels-photo-6102841.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt="Marko Ilić">
+              <div><b>Marko Zlatković</b><span>Niš</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Pitanja koja svi postavljaju.</h2>
+          <p class="section-sub">Ako ne nađeš odgovor — WhatsApp je uvek aktivan.</p>
+        </div>
+        <div class="faq-list reveal" data-faq></div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="cta-wrap">
+      <div class="container">
+        <div class="cta reveal">
+          <img src="https://images.pexels.com/photos/26051347/pexels-photo-26051347.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+          <div class="cta-overlay"></div>
+          <div class="cta-inner">
+            <div>
+              <p class="eyebrow">Spreman za let ?</p>
+              <h2>Večeras gledaš. Sutra se ne vraćaš na kablovsku.</h2>
+              <p>Trial traje 24 sata. Ako ti se svidi slika — biraš paket. Ako ne — ništa nisi izgubio.</p>
+            </div>
+            <div class="cta-actions">
+              <button type="button" class="btn btn-primary" data-order data-plan="12m">Godišnji paket · 60€</button>
+              <button type="button" class="btn btn-ghost" data-order data-trial>Zatraži 24h trial</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="images/logo.svg" alt="RocketTV logo" width="36" height="36">Rocket<span class="accent">TV</span></a>
+          <p>Premium IPTV za Balkan. 28.000+ kanala, 120.000 filmova i serija i 4K sport — bez ugovora i bez seckanja.</p>
+          <div class="footer-social">
+            <a data-wa-link href="#" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg class="icon icon-fill"><use href="#i-whatsapp"></use></svg></a>
+            <a data-tg-link href="#" target="_blank" rel="noreferrer" aria-label="Telegram"><svg class="icon icon-fill"><use href="#i-telegram"></use></svg></a>
+            <a data-mail-link href="#" aria-label="Email"><svg class="icon"><use href="#i-mail"></use></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Sajt</h4>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="kanali.html">Kanali</a></li>
+            <li><a href="paketi.html">Paketi</a></li>
+            <li><a href="podrska.html">Podrška</a></li>
+            <li><a href="uslovi.html">Uslovi korišćenja</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a data-wa-link href="#" target="_blank" rel="noreferrer">WhatsApp: <span data-wa-display></span></a></li>
+            <li><a data-tg-link href="#" target="_blank" rel="noreferrer">Telegram: <span data-tg-display></span></a></li>
+            <li><a data-mail-link href="#"><span data-mail-display></span></a></li>
+            <li>Podrška 24/7</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Plaćanje</h4>
+          <ul>
+            <li>Kartica (Visa / Mastercard)</li>
+            <li>PayPal</li>
+            <li>Kripto (USDT / BTC)</li>
+            <li>Uplatnica u dinarima</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> RocketTV. Sva prava zadržana.</span>
+        <span><a href="uslovi.html">Uslovi korišćenja</a> · Napravljeno za gledaoce koji ne trpe buffering.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa-link href="#" target="_blank" rel="noreferrer" aria-label="Kontakt WhatsApp">
+    <svg class="icon icon-fill"><use href="#i-whatsapp"></use></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

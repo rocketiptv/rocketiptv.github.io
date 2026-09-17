@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paketi i cene — RocketTV</title>
+  <meta name="description" content="Transparentni IPTV paketi od 10€: 1, 3, 6 ili 12 meseci. Isti sadržaj, 28.000+ kanala, 120.000 naslova, 4K sport. Bez ugovora i automatske obnove.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="RocketTV — početna">
+        <img src="images/logo.svg" alt="RocketTV logo" width="36" height="36">
+        Rocket<span class="accent">TV</span>
+      </a>
+      <nav class="nav-links" aria-label="Glavna navigacija">
+        <a href="index.html" data-nav="index">Početna</a>
+        <a href="kanali.html" data-nav="kanali">Kanali</a>
+        <a href="paketi.html" data-nav="paketi">Paketi</a>
+        <a href="podrska.html" data-nav="podrska">Podrška</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="btn btn-ghost btn-sm" data-order data-trial>24h trial</button>
+        <button type="button" class="btn btn-flame btn-sm" data-order data-plan="3m">Poruči paket</button>
+      </div>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Otvori meni" aria-expanded="false">
+        <svg class="icon i-menu"><use href="#i-menu"></use></svg>
+        <svg class="icon i-close" hidden><use href="#i-x"></use></svg>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" data-nav="index">Početna</a>
+    <a href="kanali.html" data-nav="kanali">Kanali</a>
+    <a href="paketi.html" data-nav="paketi">Paketi</a>
+    <a href="podrska.html" data-nav="podrska">Podrška</a>
+    <div class="mobile-actions">
+      <button type="button" class="btn btn-flame" data-order data-plan="3m">Poruči paket</button>
+      <button type="button" class="btn btn-ghost" data-order data-trial>Zatraži 24h trial</button>
+    </div>
+  </div>
+
+  <main class="page">
+
+    <!-- ===== INTRO ===== -->
+    <section class="container page-intro">
+      <p class="eyebrow">Cene</p>
+      <h1 class="page-title">Premium paketi</h1>
+      <p class="section-sub">Svi paketi imaju isti sadržaj — razlikuje se samo trajanje.</p>
+    </section>
+
+    <!-- ===== PAKETI ===== -->
+    <section class="section pricing" id="paketi">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Paketi</p>
+          <h2 class="section-title">Ponuda po meri :</h2>
+          <p class="section-sub">Plaćaš period unapred. Ne vezujemo te ugovorom</p>
+        </div>
+        <div data-pricing></div>
+      </div>
+    </section>
+
+    <!-- ===== KAKO FUNKCIONIŠE ===== -->
+    <section class="section how" id="kako">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kako funkcioniše</p>
+          <h2 class="section-title">U tri koraka do prve utakmice.</h2>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-ghost">01</span>
+            <p class="step-num">01</p>
+            <h3>Izaberi paket</h3>
+            <p>Jedan mesec za probu ili godinu za najbolju cenu. Bez ugovora i skrivenih stavki.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-ghost">02</span>
+            <p class="step-num">02</p>
+            <h3>Plati kako ti odgovara</h3>
+            <p>Kartica, PayPal, kripto ili uplatnica. Potvrda stiže odmah na WhatsApp.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-ghost">03</span>
+            <p class="step-num">03</p>
+            <h3>Gledaj za 5 minuta</h3>
+            <p>Šaljemo ti podatke i kratko uputstvo za tvoj uređaj. Uključiš i ideš.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title">Pitanja koja svi postavljaju.</h2>
+          <p class="section-sub">Ako ne nađeš odgovor — WhatsApp je uvek otvoren.</p>
+        </div>
+        <div class="faq-list reveal" data-faq></div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="cta-wrap">
+      <div class="container">
+        <div class="cta reveal">
+          <img src="https://images.pexels.com/photos/26051347/pexels-photo-26051347.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+          <div class="cta-overlay"></div>
+          <div class="cta-inner">
+            <div>
+              <p class="eyebrow">Spreman za polet</p>
+              <h2>Večeras gledaš. Sutra se ne vraćaš na kablovsku.</h2>
+              <p>Trial traje 24 sata. Ako ti se svidi slika — biraš paket. Ako ne — ništa nisi izgubio osim jednog večera.</p>
+            </div>
+            <div class="cta-actions">
+              <button type="button" class="btn btn-primary" data-order data-plan="12m">Godišnji paket · 60€</button>
+              <button type="button" class="btn btn-ghost" data-order data-trial>Zatraži 24h trial</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="images/logo.svg" alt="RocketTV logo" width="36" height="36">Rocket<span class="accent">TV</span></a>
+          <p>Premium IPTV za Balkan. 28.000+ kanala, 120.000 filmova i serija i 4K sport — bez ugovora i bez seckanja.</p>
+          <div class="footer-social">
+            <a data-wa-link href="#" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg class="icon icon-fill"><use href="#i-whatsapp"></use></svg></a>
+            <a data-tg-link href="#" target="_blank" rel="noreferrer" aria-label="Telegram"><svg class="icon icon-fill"><use href="#i-telegram"></use></svg></a>
+            <a data-mail-link href="#" aria-label="Email"><svg class="icon"><use href="#i-mail"></use></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Sajt</h4>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="kanali.html">Kanali</a></li>
+            <li><a href="paketi.html">Paketi</a></li>
+            <li><a href="podrska.html">Podrška</a></li>
+            <li><a href="uslovi.html">Uslovi korišćenja</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a data-wa-link href="#" target="_blank" rel="noreferrer">WhatsApp: <span data-wa-display></span></a></li>
+            <li><a data-tg-link href="#" target="_blank" rel="noreferrer">Telegram: <span data-tg-display></span></a></li>
+            <li><a data-mail-link href="#"><span data-mail-display></span></a></li>
+            <li>Podrška 24/7</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Plaćanje</h4>
+          <ul>
+            <li>Kartica (Visa / Mastercard)</li>
+            <li>PayPal</li>
+            <li>Kripto (USDT / BTC)</li>
+            <li>Uplatnica u dinarima</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> RocketTV. Sva prava zadržana.</span>
+        <span><a href="uslovi.html">Uslovi korišćenja</a> · Napravljeno za gledaoce koji ne trpe buffering.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa-link href="#" target="_blank" rel="noreferrer" aria-label="Piši nam na WhatsApp">
+    <svg class="icon icon-fill"><use href="#i-whatsapp"></use></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

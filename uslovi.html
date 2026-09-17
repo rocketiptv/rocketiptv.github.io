@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uslovi korišćenja — RocketTV</title>
+  <meta name="description" content="Uslovi korišćenja RocketTV IPTV servisa: pretplata, refundacije, odgovorna upotreba, dostupnost i privatnost.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="RocketTV — početna">
+        <img src="images/logo.svg" alt="RocketTV logo" width="36" height="36">
+        Rocket<span class="accent">TV</span>
+      </a>
+      <nav class="nav-links" aria-label="Glavna navigacija">
+        <a href="index.html" data-nav="index">Početna</a>
+        <a href="kanali.html" data-nav="kanali">Kanali</a>
+        <a href="paketi.html" data-nav="paketi">Paketi</a>
+        <a href="podrska.html" data-nav="podrska">Podrška</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="btn btn-ghost btn-sm" data-order data-trial>24h trial</button>
+        <button type="button" class="btn btn-flame btn-sm" data-order data-plan="3m">Poruči paket</button>
+      </div>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Otvori meni" aria-expanded="false">
+        <svg class="icon i-menu"><use href="#i-menu"></use></svg>
+        <svg class="icon i-close" hidden><use href="#i-x"></use></svg>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" data-nav="index">Početna</a>
+    <a href="kanali.html" data-nav="kanali">Kanali</a>
+    <a href="paketi.html" data-nav="paketi">Paketi</a>
+    <a href="podrska.html" data-nav="podrska">Podrška</a>
+    <div class="mobile-actions">
+      <button type="button" class="btn btn-flame" data-order data-plan="3m">Poruči paket</button>
+      <button type="button" class="btn btn-ghost" data-order data-trial>Zatraži 24h trial</button>
+    </div>
+  </div>
+
+  <main class="page">
+    <article class="article">
+      <p class="eyebrow">Pravila</p>
+      <h1 class="page-title">Uslovi korišćenja</h1>
+      <p class="date">Poslednje ažuriranje: 7. septembar 2026.</p>
+
+      <div class="prose">
+        <p>RocketTV je pretplatnički IPTV servis za zabavu. Kupovinom paketa dobijaš ličnu, neprenosivu licencu za gledanje sadržaja na dogovorenom broju veza, tokom plaćenog perioda.</p>
+
+        <h2>Pretplata</h2>
+        <p>Pretplata se plaća unapred. Ne obnavlja se automatski. Po isteku perioda nalog prestaje da radi dok se ne produži. Cene na sajtu su u evrima; dinarski iznosi se šalju uz instrukcije za uplatu.</p>
+
+        <h2>Refundacije</h2>
+        <p>Trial je besplatan. Posle aktivacije plaćenog paketa refundacija se odobrava samo ako servis tehnički ne može da radi na tvojoj mreži, i to u prvih 24 sata uz dokaz (snimak/ekran). Zloupotreba trial-a (višestruki nalozi) dovodi do trajne blokade.</p>
+
+        <h2>Odgovorna upotreba</h2>
+        <p>Zabranjeno je deljenje podataka, preprodaja, javno prikazivanje u ugostiteljstvu bez posebnog dogovora i bilo kakvo reverse-engineering naših tokova. Jedna veza = jedan uređaj u datom trenutku, osim ako nije kupljena dodatna.</p>
+
+        <h2>Dostupnost</h2>
+        <p>Ciljamo 99.9% uptime, ali internet, lokalni ISP i tvoj Wi-Fi utiču na sliku. Ne garantujemo da će svaki kanal u svakom trenutku biti u 4K. EPG i catch-up zavise od izvora.</p>
+
+        <h2>Privatnost</h2>
+        <p>Čuvamo ime, telefon i uređaj isključivo radi aktivacije i podrške. Ne prodajemo podatke trećim licima. Porudžbine idu preko WhatsApp / Telegram kanala koje sam izabereš.</p>
+
+        <h2>Kontakt</h2>
+        <p>Za pravna pitanja: <a data-mail-link href="#"><span data-mail-display>podrska@rockettv.rs</span></a>. Za hitnu tehničku pomoć — WhatsApp linija navedena u podnožju sajta.</p>
+      </div>
+    </article>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="images/logo.svg" alt="RocketTV logo" width="36" height="36">Rocket<span class="accent">TV</span></a>
+          <p>Premium IPTV za Balkan. 28.000+ kanala, 120.000 filmova i serija i 4K sport — bez ugovora i bez seckanja.</p>
+          <div class="footer-social">
+            <a data-wa-link href="#" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg class="icon icon-fill"><use href="#i-whatsapp"></use></svg></a>
+            <a data-tg-link href="#" target="_blank" rel="noreferrer" aria-label="Telegram"><svg class="icon icon-fill"><use href="#i-telegram"></use></svg></a>
+            <a data-mail-link href="#" aria-label="Email"><svg class="icon"><use href="#i-mail"></use></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Sajt</h4>
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="kanali.html">Kanali</a></li>
+            <li><a href="paketi.html">Paketi</a></li>
+            <li><a href="podrska.html">Podrška</a></li>
+            <li><a href="uslovi.html">Uslovi korišćenja</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a data-wa-link href="#" target="_blank" rel="noreferrer">WhatsApp: <span data-wa-display></span></a></li>
+            <li><a data-tg-link href="#" target="_blank" rel="noreferrer">Telegram: <span data-tg-display></span></a></li>
+            <li><a data-mail-link href="#"><span data-mail-display></span></a></li>
+            <li>Podrška 24/7, na srpskom</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Plaćanje</h4>
+          <ul>
+            <li>Kartica (Visa / Mastercard)</li>
+            <li>PayPal</li>
+            <li>Kripto (USDT / BTC)</li>
+            <li>Uplatnica u dinarima</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> RocketTV. Sva prava zadržana.</span>
+        <span><a href="uslovi.html">Uslovi korišćenja</a> · Napravljeno za gledaoce koji ne trpe buffering.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa-link href="#" target="_blank" rel="noreferrer" aria-label="Piši nam na WhatsApp">
+    <svg class="icon icon-fill"><use href="#i-whatsapp"></use></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
